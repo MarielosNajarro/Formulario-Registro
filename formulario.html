@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de registro</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1 align="center">Formulario de registro</h1>
+	<form action="#" method="post">
+		<fieldset>
+			<legend><b>Personal</b></legend>
+			<label for="fname">First Name:</label>
+			<input type="text" placeholder="Marielos" id="fname" name="fname" required pattern="[A-Z]{1}[a-z]{1,}">
+
+			<label for="lname">Last Name:</label>
+			<input type="text" placeholder="Najarro" id="lname" name="lname" required pattern="[A-Z]{1}[a-z]{1,}"> 
+
+			<label for="bday">Birtday</label>
+			<input type="date" id="bday" name="bday" required>
+
+			<label for="animal">Favorite Animal:</label>
+			<input type="text" placeholder="Dog,Cat,...etc" id="animal" name="animal" required pattern="[A-Z]{1}[a-z]{1,}">
+		</fieldset>
+
+		<br>
+		<fieldset>
+			<legend><b>Account</b></legend>
+			<label for="email">Email:</label>
+			<input type="email" placeholder="marielosn@hotmail.com" id="email" name="email" required>
+
+			<label for="pass">Password:</label>
+			<input type="password" placeholder="Type your password" id="pass" name="pass" required 
+			pattern="[A-Za-z0-9!?-]{8,12}">
+
+			<label for="verypass">Verify Password:</label>
+			<input type="password" placeholder="Type your password again" id="verypass" name="verypass" required pattern="[A-Za-z0-9!?-]{8,12}">
+		</fieldset>
+
+		<br>
+		<fieldset>
+			<legend><b>Contact</b></legend>
+			<label for="address">Address</label>
+			<input type="text" placeholder="Av. Independencia No.241" id="adress" name="address" required>
+
+			<label for="city">City</label>
+			<input type="text" placeholder="Antiguo Cuscatlan" id="city" name="city" required pattern="[A-Z]{1,}[a-z}{1,} \s [A-Z]{1,}[a-z}{1,}">
+
+			<label for="country">Country</label>
+			<input type="text" placeholder="El Salvador" id="country" name="country" required pattern="[A-Z]{1,}[a-z}{1,} \s [A-Z]{1,}[a-z}{1,}">
+
+			<label for="phone">Phone number</label>
+			<input type="text" placeholder="7646-8898" id="phone" name="phone" required pattern="[267][0-9]{3}-[0-9]{4}">
+
+
+		</fieldset>
+	<br>
+	<input type="submit" values="send">
+</form>
+</body>
+</html>
